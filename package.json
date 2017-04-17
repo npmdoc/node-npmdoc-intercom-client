@@ -1,1 +1,39 @@
-{     "devDependencies": {         "intercom-client": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-intercom-client",     "homepage": "https://github.com/npmdoc/node-npmdoc-intercom-client",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-intercom-client.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [intercom-client (v2.8.7)](https://github.com/intercom/intercom-node) [![npm package](https://img.shields.io/npm/v/npmdoc-intercom-client.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-intercom-client) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-intercom-client.svg)](https://travis-ci.org/npmdoc/node-npmdoc-intercom-client)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "intercom-client": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-intercom-client",
+    "keywords": [
+        "documentation",
+        "intercom-client"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_intercom_client.js",
+    "name": "npmdoc-intercom-client",
+    "nameAlias": "npmdoc_intercom_client",
+    "nameOriginal": "npmdoc-intercom-client",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-intercom-client.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
