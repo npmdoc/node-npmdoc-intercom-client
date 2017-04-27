@@ -1,4 +1,7 @@
-# api documentation for  [intercom-client (v2.8.7)](https://github.com/intercom/intercom-node)  [![npm package](https://img.shields.io/npm/v/npmdoc-intercom-client.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-intercom-client) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-intercom-client.svg)](https://travis-ci.org/npmdoc/node-npmdoc-intercom-client)
+# npmdoc-intercom-client
+
+#### basic api documentation for  [intercom-client (v2.8.7)](https://github.com/intercom/intercom-node)  [![npm package](https://img.shields.io/npm/v/npmdoc-intercom-client.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-intercom-client) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-intercom-client.svg)](https://travis-ci.org/npmdoc/node-npmdoc-intercom-client)
+
 #### Official Node bindings to the Intercom API
 
 [![NPM](https://nodei.co/npm/intercom-client.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/intercom-client)
@@ -82,7 +85,8 @@
         "prepublish": "gulp prepublish",
         "test": "gulp"
     },
-    "version": "2.8.7"
+    "version": "2.8.7",
+    "bin": {}
 }
 ```
 
